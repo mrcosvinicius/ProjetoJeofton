@@ -59,6 +59,12 @@
       button:hover {
         background: #0056b3;
       }
+      .btn-cad:hover{
+        background: #155724;
+      }
+      .btn-edit:hover{
+        background: #a2a500;
+      }
       .btn-danger {
         background: #dc3545;
       }
@@ -129,8 +135,8 @@
             <label for="curso">Curso:</label>
             <input type="text" id="curso" name="curso" />
           </div>
-          <button type="submit">Cadastrar</button>
-          <button type="button" onclick="limparFormulario()">Limpar</button>
+          <button type="submit" class="btn-cad">Cadastrar</button>
+          <button type="button" onclick="limparFormulario()" >Limpar</button>
         </form>
       </div>
 
@@ -226,7 +232,7 @@
                     <div class="aluno-actions">
                         <button onclick="editarAluno(${
                           aluno.id
-                        })">Editar</button>
+                        })" class= "btn-edit">Editar</button>
                         <button onclick="deletarAluno(${
                           aluno.id
                         })" class="btn-danger">Excluir</button>
